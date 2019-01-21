@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 import React from 'react'
-import { testStyles } from './styles.js'
+import { graphStyles } from './styles.js'
 
 export default ({ text, styles }) => (
-  <p css={{ ...testStyles, ...styles }}>{text}</p>
+  <p css={{ ...graphStyles, ...styles }}>{text}</p>
 )
