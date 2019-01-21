@@ -1,17 +1,14 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 
+const defineColor = hex => css`
+  color: ${hex};
+`
+
 export const COLORS = {
-  BLACK: css`
-    color: #000;
-  `,
-  WHITE: css`
-    color: #fff;
-  `,
-  RED: css`
-    color: #ff0000;
-  `,
-  BLUE: css`
-    color: #0000ff;
-  `,
+  BLACK: defineColor('#272727'),
+  WHITE: defineColor('#FFFFFF'),
+  RED: defineColor('#FF0000'),
+  BLUE: defineColor('#0000FF'),
+  LIGHT_GRAY: defineColor('#C6C4C5'),
 }
