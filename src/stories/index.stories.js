@@ -6,6 +6,7 @@ import Headline from '../components/Headline'
 import Input from '../components/Input'
 import Button from '../components/Button'
 import Marquee from '../components/Marquee'
+import Container from '../components/Container'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
@@ -46,4 +47,10 @@ storiesOf('Input', module).add('default', () => <Input label="Simple Label" />)
 
 storiesOf('Marquee', module).add('default', () => (
   <Marquee text="This is the best html element around" />
+))
+
+storiesOf('Container', module).add('default', () => (
+  <Container type="flex" borderColor="purple">
+    <Graph text="Wow, I'm contained" />
+  </Container>
 ))
