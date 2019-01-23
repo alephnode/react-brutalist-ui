@@ -15,7 +15,10 @@ export default ({ label, styles = {} }) => {
         type="text"
         id="ipLabel"
         value={value}
-        onChange={({ target }) => setValue(target.value)}
+        onChange={({ target }) => {
+          console.log(target.value)
+          setValue(target.value)
+        }}
         css={{ ...inputStyles, ...input }}
       />
     </div>
