@@ -5,6 +5,7 @@ import Graph from '../components/Graph'
 import Headline from '../components/Headline'
 import Input from '../components/Input'
 import Button from '../components/Button'
+import Marquee from '../components/Marquee'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
@@ -42,3 +43,7 @@ storiesOf('Headline', module)
   ))
 
 storiesOf('Input', module).add('default', () => <Input label="Simple Label" />)
+
+storiesOf('Marquee', module).add('default', () => (
+  <Marquee text="This is the best html element around" />
+))
