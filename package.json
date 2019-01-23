@@ -7,8 +7,8 @@
     "@storybook/addon-options": "^4.1.6",
     "emotion": "^10.0.6",
     "prop-types": "^15.6.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.8.0-alpha.1",
+    "react-dom": "^16.8.0-alpha.1",
     "react-emotion": "^10.0.0"
   },
   "devDependencies": {
