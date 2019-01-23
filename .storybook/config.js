@@ -4,8 +4,9 @@ import { themes } from '@storybook/components'
 
 addDecorator(
   withOptions({
-    name: 'Theme',
-    theme: {},
+    name: 'Brutalist UI',
+    url: 'https://github.com/alephnode/react-brutalist-ui',
+    theme: themes.dark,
   })
 )
 

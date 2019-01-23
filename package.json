@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@storybook/addon-options": "^4.1.6",
+    "@storybook/addon-options": "^4.1.9",
     "emotion": "^10.0.6",
     "prop-types": "^15.6.2",
     "react": "^16.8.0-alpha.1",

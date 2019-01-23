@@ -6,5 +6,9 @@ export const inputStyles = css`
   border: 1px solid red;
 `
 export const inputContainerStyles = css`
-  border: 1px solid blue;
+  border: 1px solid green;
+`
+
+export const labelStyles = css`
+  ${COLORS.WHITE};
 `
