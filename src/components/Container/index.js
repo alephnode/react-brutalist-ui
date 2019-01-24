@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Container = ({ children, type, borderColor }) => (
   <div
@@ -12,5 +13,11 @@ const Container = ({ children, type, borderColor }) => (
     {children}
   </div>
 )
+
+Container.propTypes = {
+  children: PropTypes.any,
+  type: PropTypes.string,
+  borderColor: PropTypes.string,
+}
 
 export default Container

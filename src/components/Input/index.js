@@ -2,6 +2,7 @@
 import { jsx, css } from '@emotion/core'
 import { useState } from 'react'
 import { inputStyles, inputContainerStyles, labelStyles } from './styles.js'
+import PropTypes from 'prop-types'
 
 const Input = ({ label, styles = {} }) => {
   const [value, setValue] = useState('')
@@ -23,6 +24,11 @@ const Input = ({ label, styles = {} }) => {
       />
     </div>
   )
+}
+
+Input.propTypes = {
+  label: PropTypes.string,
+  styles: PropTypes.object,
 }
 
 export default Input
