@@ -25,8 +25,8 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "deploy-storybook": "storybook-to-aws-s3 --bucket-path=react-brutalist-ui",
-    "build": "parcel build index.html",
+    "build": "build-storybook -c .storybook -o build",
+    "deploy": "now ./build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   }
