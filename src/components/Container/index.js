@@ -2,7 +2,7 @@
 import { jsx, css } from '@emotion/core'
 import React from 'react'
 
-export default ({ children, type, borderColor }) => (
+const Container = ({ children, type, borderColor }) => (
   <div
     css={() => css`
       display: ${type};
@@ -12,3 +12,5 @@ export default ({ children, type, borderColor }) => (
     {children}
   </div>
 )
+
+export default Container

@@ -3,7 +3,7 @@ import { jsx, css } from '@emotion/core'
 import { useState } from 'react'
 import { inputStyles, inputContainerStyles, labelStyles } from './styles.js'
 
-export default ({ label, styles = {} }) => {
+const Input = ({ label, styles = {} }) => {
   const [value, setValue] = useState('')
   const { container = {}, ipLabel = {}, input = {} } = styles
   return (
@@ -24,3 +24,5 @@ export default ({ label, styles = {} }) => {
     </div>
   )
 }
+
+export default Input

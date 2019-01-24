@@ -44,6 +44,10 @@ storiesOf('Graph', module)
   .add('Demo - Custom Styles', () => (
     <Graph text="Wow, I'm stylish." styles={customStyle} />
   ))
+  .addDecorator(withInfo)
+  .add('Reference', () => <Graph text="I am a sample graph." />, {
+    info: { inline: true },
+  })
 
 storiesOf('Headline', module)
   .add('Demo - Basic', () => <Headline text="I am a sample headline." />)
@@ -53,17 +57,46 @@ storiesOf('Headline', module)
       styles={customStyleHeadline}
     />
   ))
+  .addDecorator(withInfo)
+  .add('Reference', () => <Headline text="I am a sample headline." />, {
+    info: { inline: true },
+  })
 
-storiesOf('Input', module).add('Demo - Basic', () => (
-  <Input label="Simple Label" />
-))
+storiesOf('Input', module)
+  .add('Demo - Basic', () => <Input label="Simple Label" />)
+  .addDecorator(withInfo)
+  .add('Reference', () => <Input label="Simple Label" />, {
+    info: { inline: true },
+  })
 
-storiesOf('Marquee', module).add('Demo - Basic', () => (
-  <Marquee text="This is the best html element around" />
-))
+storiesOf('Marquee', module)
+  .add('Demo - Basic', () => (
+    <Marquee text="This is the best html element around" />
+  ))
+  .addDecorator(withInfo)
+  .add(
+    'Reference',
+    () => <Marquee text="This is the best html element around" />,
+    {
+      info: { inline: true },
+    }
+  )
 
-storiesOf('Container', module).add('Demo - Basic', () => (
-  <Container type="flex" borderColor="purple">
-    <Graph text="Wow, I'm contained" />
-  </Container>
-))
+storiesOf('Container', module)
+  .add('Demo - Basic', () => (
+    <Container type="flex" borderColor="purple">
+      <Graph text="Wow, I'm contained" />
+    </Container>
+  ))
+  .addDecorator(withInfo)
+  .add(
+    'Reference',
+    () => (
+      <Container type="flex" borderColor="purple">
+        <Graph text="Wow, I'm contained" />
+      </Container>
+    ),
+    {
+      info: { inline: true },
+    }
+  )
