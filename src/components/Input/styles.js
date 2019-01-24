@@ -10,5 +10,5 @@ export const inputContainerStyles = css`
 `
 
 export const labelStyles = css`
-  ${COLORS.WHITE};
+  ${COLORS.BLACK};
 `
