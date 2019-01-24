@@ -19,11 +19,13 @@
     "@storybook/addon-links": "^4.1.6",
     "@storybook/addons": "^4.1.6",
     "@storybook/react": "^4.1.6",
+    "@storybook/storybook-deployer": "^2.8.1",
     "babel-loader": "^8.0.5",
     "parcel-bundler": "^1.11.0"
   },
   "scripts": {
     "start": "parcel index.html",
+    "deploy-storybook": "storybook-to-aws-s3 --bucket-path=react-brutalist-ui",
     "build": "parcel build index.html",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
