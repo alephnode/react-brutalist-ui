@@ -15,9 +15,13 @@ const Container = ({ children, type, borderColor }) => (
 )
 
 Container.propTypes = {
-  children: PropTypes.any,
-  type: PropTypes.string,
+  children: PropTypes.any.isRequired,
+  type: PropTypes.string.isRequired,
   borderColor: PropTypes.string,
+}
+
+Container.defaultProps = {
+  type: 'flex',
 }
 
 export default Container

@@ -9,8 +9,13 @@ const Graph = ({ text, styles }) => (
 )
 
 Graph.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
   styles: PropTypes.object,
+}
+
+Graph.defaultProps = {
+  text: 'Example Graph text',
+  styles: {},
 }
 
 export default Graph

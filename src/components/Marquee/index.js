@@ -7,9 +7,13 @@ import PropTypes from 'prop-types'
 const Marquee = ({ text, styles }) => (
   <marquee css={{ ...marqueeStyles, ...styles }}>{text}</marquee>
 )
+Marquee.defaultProps = {
+  text: 'Enter text',
+  styles: {},
+}
 
 Marquee.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
   styles: PropTypes.object,
 }
 

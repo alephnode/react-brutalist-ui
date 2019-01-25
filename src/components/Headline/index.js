@@ -9,8 +9,13 @@ const Headline = ({ text, styles }) => (
 )
 
 Headline.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
   styles: PropTypes.object,
+}
+
+Headline.defaultProps = {
+  text: 'Example Headline text',
+  styles: {},
 }
 
 export default Headline
