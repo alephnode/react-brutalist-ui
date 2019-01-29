@@ -5,7 +5,7 @@ import Login from '../components/Login'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 
-storiesOf('Compounds/Login', module)
+storiesOf('Login', module)
   .add('Demo - Basic', () => (
     <Login
       onSubmit={(e, values) => {

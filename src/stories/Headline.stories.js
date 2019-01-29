@@ -12,7 +12,7 @@ const customStyleHeadline = css`
   padding: 20px 5px;
 `
 
-storiesOf('Content/Headline', module)
+storiesOf('Headline', module)
   .add('Demo - Basic', () => <Headline text="I am a sample headline." />)
   .add('Demo - Custom Styles', () => (
     <Headline

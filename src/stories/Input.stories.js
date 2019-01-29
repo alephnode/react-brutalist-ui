@@ -5,7 +5,7 @@ import Input from '../components/Input'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 
-storiesOf('Controls/Input', module)
+storiesOf('Input', module)
   .add('Demo - Basic', () => <Input label="Simple Label" />)
   .addDecorator(withInfo)
   .add('Reference', () => <Input label="Simple Label" />, {

@@ -5,7 +5,7 @@ import Marquee from '../components/Marquee'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 
-storiesOf('Content/Marquee', module)
+storiesOf('Marquee', module)
   .add('Demo - Basic', () => (
     <Marquee text="This is the best html element around" />
   ))

@@ -12,7 +12,7 @@ const customStyle = css`
   padding: 20px 5px;
 `
 
-storiesOf('Content/Graph', module)
+storiesOf('Graph', module)
   .add('Demo - Basic', () => <Graph text="I am a sample graph." />)
   .add('Demo - Custom Styles', () => (
     <Graph text="Wow, I'm stylish." styles={customStyle} />

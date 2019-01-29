@@ -6,7 +6,7 @@ import Graph from '../components/Graph'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 
-storiesOf('Layout/Container', module)
+storiesOf('Container', module)
   .add('Demo - Basic', () => (
     <Container type="flex" borderColor="purple">
       <Graph text="Wow, I'm contained" />

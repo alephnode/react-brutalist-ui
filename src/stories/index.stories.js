@@ -1,5 +1,5 @@
 import '../../src/global.css'
-import './Button.stories'
+import './Button/Button.stories'
 import './Graph.stories'
 import './Headline.stories'
 import './Input.stories'
