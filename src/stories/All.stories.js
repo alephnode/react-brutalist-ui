@@ -12,9 +12,17 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { withInfo } from '@storybook/addon-info'
 
+const customStyleHeadline = css`
+  background-color: red;
+  color: yellow;
+  font-family: courier;
+  padding: 20px 5px;
+`
+
 storiesOf('All', module)
   .add('Default - Home', () => (
     <>
+      <Headline text="REACT BRUTALIST UI" styles={customStyleHeadline} />
       <Button onClick={action('I was clicked')}>Hello, Brutal button</Button>
       <Container>
         <p>I cannot be contained.</p>
