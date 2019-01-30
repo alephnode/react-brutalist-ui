@@ -25,7 +25,7 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "build-storybook -c .storybook -o build",
+    "build": "build-storybook -c .storybook -s ./static -o build",
     "deploy": "now ./build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
