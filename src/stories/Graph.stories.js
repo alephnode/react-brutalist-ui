@@ -13,7 +13,7 @@ const customStyle = css`
 `
 
 storiesOf('Graph', module)
-  .add('Demo - Basic', () => <Graph text="I am a sample graph." />)
+  .add('Demo - Basic', () => <Graph />)
   .add('Demo - Custom Styles', () => (
     <Graph text="Wow, I'm stylish." styles={customStyle} />
   ))

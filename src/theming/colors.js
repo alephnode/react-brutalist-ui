@@ -2,7 +2,7 @@
 import { jsx, css } from '@emotion/core'
 
 const defineColor = hex => css`
-  color: ${hex};
+  ${hex};
 `
 
 export const COLORS = {

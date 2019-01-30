@@ -3,7 +3,7 @@ import { jsx, css } from '@emotion/core'
 import { COLORS } from '../../theming/colors.js'
 
 export const buttonStyles = css`
-  ${COLORS.RED}
+  color: ${COLORS.RED};
   background: lightgray;
   border: 2px solid black;
   box-shadow: 0px 0px 2px;

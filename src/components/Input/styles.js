@@ -13,6 +13,6 @@ export const inputContainerStyles = css`
 `
 
 export const labelStyles = css`
-  ${COLORS.BLACK};
+  color: ${COLORS.BLACK};
   margin-right: 1rem;
 `
