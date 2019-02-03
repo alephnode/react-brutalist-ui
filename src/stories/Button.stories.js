@@ -1,11 +1,10 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 import React from 'react'
-import Button from '../../components/Button'
+import Button from '../components/Button'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { withInfo } from '@storybook/addon-info'
-import MD from './ButtonDescription.md'
 
 storiesOf('Button', module)
   .add('Demo - Basic', () => (
@@ -17,5 +16,5 @@ storiesOf('Button', module)
     () => (
       <Button onClick={action('I was clicked')}>Hello, Brutal button</Button>
     ),
-    { info: { text: MD, inline: true } }
+    { info: { inline: true } }
   )
