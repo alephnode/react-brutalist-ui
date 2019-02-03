@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
-import { useState } from 'react'
 import { inputStyles, inputContainerStyles, labelStyles } from './styles.js'
 import PropTypes from 'prop-types'
 
